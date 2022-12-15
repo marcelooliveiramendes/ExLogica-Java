@@ -2,7 +2,7 @@ package faccat;
 
 import java.util.Scanner;
 
-public class L02E33_MaiorValor {
+public class MaiorValor {
 
 	public static void main(String[] args) {
 		
@@ -14,11 +14,11 @@ public class L02E33_MaiorValor {
 		byte valor2 = sc.nextByte();
 		
 		if (valor1==valor2) {
-			System.out.println("Números iguais");
+			System.out.println("Numeros iguais");
 		} else if (valor1>valor2) {
-			System.out.println("Primeiro valor é maior");
+			System.out.println("Primeiro valor e maior");
 		} else {
-			System.out.println("Segundo valor é maior");
+			System.out.println("Segundo valor e maior");
 		}
 		sc.close();
 
