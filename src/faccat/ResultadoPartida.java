@@ -2,7 +2,7 @@ package faccat;
 
 import java.util.Scanner;
 
-public class L02E32_ResultadoPartida {
+public class ResultadoPartida {
 
 	public static void main(String[] args) {
 		
@@ -10,19 +10,19 @@ public class L02E32_ResultadoPartida {
 		
 		System.out.println("Qual o nome do primeiro time: ");
 		String time1 = sc.next();
-		System.out.println("Quantos gols o time "+time1+" fez? ");
-		byte gols1 = sc.nextByte();
 		System.out.println("Qual o nome do segundo time: ");
 		String time2 = sc.next();
-		System.out.println("Quantos gols o time "+time2+" fez? ");
+		System.out.println("Quantidade de gols do primeiro time: ");
+		byte gols1 = sc.nextByte();
+		System.out.println("Quantidade de gols do segundo time: ");
 		byte gols2 = sc.nextByte();
 
 		if (gols1>gols2) {
-			System.out.println("O time vencedor é o "+time1);
+			System.out.println(time1+" Ã© o ganhador!");
 		} else if (gols1==gols2) {
-			System.out.println("Deu empate");
+			System.out.println("Empate!");
 		} else {
-			System.out.println("O time vencedor é o "+time2);
+			System.out.println(time2+" Ã© o ganhador!");
 		}
 		sc.close();
 	}
